@@ -256,3 +256,27 @@
     display: none;
   }
 }
+
+@media (max-width: 600px) {
+  .main-bottom {
+    position: sticky;
+    bottom: 0;
+    padding-bottom: env(safe-area-inset-bottom, 10px);
+    background-color: #f0f4f9;
+    z-index: 99;
+  }
+
+  .search-box input {
+    font-size: 14px;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .search-box {
+    flex-wrap: wrap;
+  }
+
+  .search-box div {
+    flex-shrink: 0;
+  }
+}
