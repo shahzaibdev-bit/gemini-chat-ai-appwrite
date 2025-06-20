@@ -6,6 +6,7 @@
   background-color: #f0f4f9;
   padding: 25px 15px;
 }
+
 .sidebar img {
   width: 20px;
 }
@@ -50,6 +51,7 @@
   color: #282828;
   cursor: pointer;
 }
+
 .sidebar .recent-entry:hover {
   background: #e2e6eb;
 }
@@ -62,10 +64,4 @@
 .sidebar .bottom-item {
   padding-right: 10px;
   cursor: pointer;
-}
-
-@media (max-width: 600px) {
-  .sidebar {
-    display: none;
-  }
 }

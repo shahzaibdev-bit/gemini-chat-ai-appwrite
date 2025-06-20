@@ -1,4 +1,4 @@
-// ✅ Main.jsx – final cleaned‑up version with working logout
+// ✅ Main.jsx – updated to include credit in bottom-info
 import React, { useContext, useState, useEffect } from "react";
 import "./Main.css";
 import { assets } from "../../assets/assets";
@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 function Main() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const context = useContext(Context); // must come before any logging of context
+  const context = useContext(Context);
 
   const {
     onSent = () => {},
@@ -67,32 +67,6 @@ function Main() {
               </p>
               <p>How can I help you today?</p>
             </div>
-
-            {/* <div className="cards">
-              {[
-                {
-                  text: "Suggest beautiful places to see on an upcoming road trip",
-                  icon: assets.compass_icon,
-                },
-                {
-                  text: "Briefly summarize this concept: urban planning",
-                  icon: assets.bulb_icon,
-                },
-                {
-                  text: "Brainstorm team‑bonding activities for our work retreat",
-                  icon: assets.message_icon,
-                },
-                {
-                  text: "Improve the readability of the following code",
-                  icon: assets.code_icon,
-                },
-              ].map(({ text, icon }) => (
-                <div className="card" key={text}>
-                  <p>{text}</p>
-                  <img src={icon} alt="" />
-                </div>
-              ))}
-            </div> */}
           </>
         ) : (
           <div className="result">
@@ -136,6 +110,10 @@ function Main() {
           <p className="bottom-info">
             Gemini may produce inaccurate information about people, places, or
             facts. It is not intended to give advice.
+            <br />
+            <span style={{ fontWeight: 600 }}>
+              Made by Shahzaib&nbsp;(shahzaibdev-bit)
+            </span>
           </p>
         </div>
       </div>

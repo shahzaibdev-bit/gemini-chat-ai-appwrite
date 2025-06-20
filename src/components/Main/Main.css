@@ -3,7 +3,10 @@
   min-height: 100vh;
   padding-bottom: 15vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
 .main .nav {
   display: flex;
   align-items: center;
@@ -12,6 +15,7 @@
   padding: 20px;
   color: #585858;
 }
+
 .user-menu {
   position: relative;
   cursor: pointer;
@@ -46,9 +50,15 @@
   width: 80px;
   border-radius: 50%;
 }
+
 .main-container {
   max-width: 900px;
   margin: auto;
+  width: 100%;
+  padding: 0 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .main .greet {
@@ -107,6 +117,8 @@
   max-width: 900px;
   padding: 0 20px;
   margin: auto;
+  left: 0;
+  right: 0;
 }
 
 .search-box {
@@ -118,10 +130,12 @@
   padding: 10px 20px;
   border-radius: 50px;
 }
+
 .search-box img {
   width: 24px;
   cursor: pointer;
 }
+
 .search-box input {
   flex: 1;
   background: transparent;
@@ -160,21 +174,26 @@
   align-items: center;
   gap: 20px;
 }
+
 .result img {
   width: 40px;
   border-radius: 50%;
 }
+
 .result-data {
   display: flex;
   align-items: start;
   gap: 20px;
+  flex-wrap: wrap;
 }
+
 .loader {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .loader hr {
   border-radius: 4px;
   border: none;
@@ -184,6 +203,7 @@
   height: 20px;
   animation: loader 3s infinite linear;
 }
+
 @keyframes loader {
   0% {
     background-position: -800px 0px;
@@ -200,17 +220,39 @@
 }
 
 @media (max-width: 600px) {
-  .main-bottom input {
-    flex: none;
-    width: 150px;
+  .main .greet {
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
   }
-  .main-bottom img {
-    width: 20px;
+  .main .nav {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .main-container {
+    padding: 0 10px;
+  }
+  .main-bottom {
+    padding: 0 10px;
   }
   .search-box {
-    padding: 5px 10px;
+    padding: 8px 12px;
+    gap: 10px;
   }
-  .search-box div {
-    gap: 5px;
+  .search-box input {
+    font-size: 14px;
+  }
+  .main .card {
+    height: 140px;
+    padding: 10px;
+  }
+  .main .card p {
+    font-size: 13px;
+  }
+  .main .card img {
+    width: 22px;
+  }
+  .main .bottom-info {
+    display: none;
   }
 }
