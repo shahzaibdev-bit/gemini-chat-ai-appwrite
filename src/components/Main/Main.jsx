@@ -112,7 +112,7 @@ function Main() {
             facts. It is not intended to give advice.
             <br />
             <span style={{ fontWeight: 600 }}>
-              Made by Shahzaib&nbsp;(shahzaibdev-bit)
+              Made by Shahzaib Ahmad&nbsp;(shahzaibdev-bit)
             </span>
           </p>
         </div>
